@@ -68,7 +68,9 @@ Q =		2	0	0	0	0	0
 The above Q table is initialized with 0 , we will use the formula given below to calculate the value of the Q(state,action) using the below formula:
 
 -------------------------------------------------------------------------------
-Q(state, action) = R(state, action) + Gamma * Max[Q(next state, all actions)]
+
+`Q(state, action) = R(state, action) + Gamma * Max[Q(next state, all actions)]`
+
 -------------------------------------------------------------------------------
 
 Example:
@@ -142,7 +144,9 @@ In case of SARSA, the Q value is calculated after moving to the next Q state, i.
 Formula is as follows:
 
 -------------------------------------------------------------------------------
-Q(state, action) = R(state, action) + Gamma * Q(SX,AX)
+
+`Q(state, action) = R(state, action) + Gamma * Q(SX,AX)`
+
 -------------------------------------------------------------------------------
 
 So now when the agent iterates through all the States it comes to know that avoiding signal is the best path, instead of choosing the road with the signal.
@@ -193,7 +197,7 @@ The values are updated by looking ahead for a sample successor state. The differ
 TD and Q- Learning can be related using the below formula:
 
 -------------------------------------------------------------------------------
-Q<sub>t</sub>(S,A) = Q<sub>(t-1)</sub>(S,A) + Gamma * TD<sub>t</sub>(A,S)
+`Q<sub>t</sub>(S,A) = Q<sub>(t-1)</sub>(S,A) + Gamma * TD<sub>t</sub>(A,S)`
 -------------------------------------------------------------------------------
 
 
