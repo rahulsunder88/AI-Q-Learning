@@ -1,8 +1,27 @@
-## Welcome to GitHub Pages
+# Artificial Intelligence – Q Learning
 
-You can use the [editor on GitHub](https://github.com/rahulsunder88/Artificial-Intelligence---Q-Learning/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+## What is Q-Learning?
+
+Q-Learning is a part of Artificial Intelligence, used to determine the state action values for each possible state and its action. Q-Learning starts with all the values as zeroes in the Environment. The Reward for each state action pair helps in determining the Q value for a state action. The agent uses these Q values to traverse to the Goal.
+
+Goal here means the State action pair having the maximum value. It can be any value. We will have it as 100.
+
+Q-Learning is applied to a STATIC environment where we know the total number of States and the possible actions, without this knowledge the agent will not be able to determine the correct path.
+
+I shall try to cover the important topics related to Q-Learning. I will not get into much mathematics to make things simpler. Out of curiosity I have gathered information from various sources and consolidated them here.
+
+A complete iteration in an environment is called an EPISODE.
+
+Let us consider an example for easy understanding:
+
+R - Reward matrix having state in Rows and Action in Columns.
+Q - Q matrix having state in Rows and Action in Columns.
+
+Let us take an environment of 5 States and 5 Action:
+
+
 
 ### Markdown
 
@@ -23,7 +42,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](/Users/rahulchellappa/Desktop/article)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
