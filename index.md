@@ -193,7 +193,7 @@ TD and Q- Learning can be related using the below formula:
 
 -------------------------------------------------------------------------------
 
-`Q<sub>t</sub>(S,A) = Q<sub>(t-1)</sub>(S,A) + Gamma * TD<sub>t</sub>(A,S)`
+Q<sub>t</sub>(S,A) = Q<sub>(t-1)</sub>(S,A) + Gamma * TD<sub>t</sub>(A,S)
 
 -------------------------------------------------------------------------------
 
