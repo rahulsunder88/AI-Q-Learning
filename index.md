@@ -24,7 +24,70 @@ Let us take an environment of 5 States and 5 Action:
 
 
 
+```markdown
 
+
+
+
+
+
+State	Action
+		1	2	3	4	5
+	1	0	0	-1	0	-1
+	2	0	0	0	-1	100
+	3	-1	0	0	-0.5	100
+	4	0	-1	-0.5	0	-1
+	5	0	0	-1	0	100
+ 
+
+
+R =
+
+
+
+
+
+Here are 4 junctions, the agent wants to go the Ice cream parlour from various junctions, the junction 5 is the ice cream parlour, there is a signal between 4 and 3 which takes a long time. They are bidirectional roads connecting each other, if there is no connectivity we give a reward of -1, for the signal we give reward of -0.5, and the road leading to Ice cream parlour is given a reward of 100.
+
+
+
+
+Similarly we have a Q table as follows:
+
+
+
+State	Action
+		1	2	3	4	5
+	1	0	0	0	0	0
+	2	0	0	0	0	0
+	3	0	0	0	0	0
+	4	0	0	0	0	0
+Q =
+
+
+
+
+The above Q table is initialized with 0 , we will use the formula given below to calculate the value of the Q(state,action) using the below formula:
+
+Q(state, action) = R(state, action) + Gamma * Max[Q(next state, all actions)]
+
+
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](/Users/rahulchellappa/Desktop/article)
+```
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
