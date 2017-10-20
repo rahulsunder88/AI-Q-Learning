@@ -1,4 +1,4 @@
-### Markdown
+
 # Artificial Intelligence – Q Learning 
 
 
@@ -110,8 +110,6 @@ Q(2,5) = 140
 ```
 ```markdown
 
-
-
 		State		Action
 			1	2	3	4	5
 		1	0	0	0	0	0
@@ -119,9 +117,6 @@ Q=		2	0	0	0	0	140
 		3	0	0	0	0	0
 		4	0	0	0	0	0
  
-
-
-
 ```
 Similarly all the Q values are updated and the agent learns to move around the optimal path.
 
@@ -162,29 +157,29 @@ The Temporal Difference along with Q – Learning provides a powerful algorithm 
 
 ## On Policy and Off Policy Learning:
 
-**On Policy:**
+`On Policy:`
 On policy learning is a kind of learning where the agent sticks to the policy and follows the policy strictly based on rewards, here very rarely the exploration takes places, always the optimum path is selected. There will be more of exploitation rather than exploration. The agent learns by experience.
 
-**Off Policy:**
+`Off Policy:`
 As the name suggest it is in contrast to On Policy learning where the agent learns and obtains rewards by selecting different and random paths, by this the agent learns and acts intelligently, it can find new ways and strategies which where not introduced in the learning phase unlike On policy agent which will adhere to the experiences gained in the learning phase.
 
 ## Action Selection Policies:
 
-**Epsilon-greedy: **
+`Epsilon-greedy: `
 
 most of the time the action with the highest estimated reward is chosen, called the greediest action. Every once in a while, say with a small probability  , `Epsilon` an action is selected at random. The action is selected uniformly, independant of the action-value estimates. This method ensures that if enough trials are done, each action will be tried an infinite number of times, thus ensuring optimal actions are discovered.
 
-**Epsilon-soft: **
+`Epsilon-soft: `
 
 very similar to  Epsilon-greedy. The best action is selected with probability 1 - Epsilon  and the rest of the time a random action is chosen uniformly.
 
-**SoftMax: **
+`SoftMax: `
 
 One drawback of  Epsilon-greedy and  Epsilon-soft is that they select random actions uniformly. The worst possible action is just as likely to be selected as the second best. Softmax remedies this by assigning a rank or weight to each of the actions, according to their action-value estimate. A random action is selected with regards to the weight associated with each action, meaning the worst actions are unlikely to be chosen. This is a good approach to take where the worst actions are very unfavourable.
 
 ```markdown
 
-### There are two types of Temporal Differences:
+There are two types of Temporal Differences:
 
 1)	Bootstrapping: 
 The values are updated using the estimate of the successor state. Eg: A mouse running for cheese in an environment with a trap(often used example).
@@ -197,7 +192,9 @@ The values are updated by looking ahead for a sample successor state. The differ
 TD and Q- Learning can be related using the below formula:
 
 -------------------------------------------------------------------------------
+
 `Q<sub>t</sub>(S,A) = Q<sub>(t-1)</sub>(S,A) + Gamma * TD<sub>t</sub>(A,S)`
+
 -------------------------------------------------------------------------------
 
 
