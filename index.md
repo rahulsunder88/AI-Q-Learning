@@ -22,7 +22,7 @@ Q - Q matrix having state in Rows and Action in Columns.
 
 Let us take an environment of 5 States and 5 Action:
 
-![drawing](https://github.com/rahulsunder88/AI-Q-Learning/blob/master/article.png "Logo Title Text 1")
+![drawing](AI-Q-Learning/article.png "Logo Title Text 1")
 
 ```markdown
 
