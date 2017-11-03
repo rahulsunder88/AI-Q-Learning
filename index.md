@@ -18,7 +18,16 @@ A complete iteration in an environment is called an EPISODE.
 ## Overview:
 
 ```markdown
-We have an agent in an environment(Several junctions, connecting roads and the destination ICE CREAM Parlour) where it tries to find the possible ways to get the route from sevaral junctions to the destination based on the intermediate rewards. A reward of -1 means there is no way further, -0.5 is a penalty due to the signal in the route which can cause delay. A reward of 100 is given when the agent reaches the ICE CREAM parlour. We will talk about various algorithm and differences between them. This is closed or fixed environment, this is where Q - Learning helps the agent to learn and decide the path during training. In case of open or dynamic environment the Q - Learning will not work, so we will apply Q - Learning with Artificial neural networks to predict the outcome and learn the path. This is called as Deep Q - Learning.
+We have an agent in an environment(Several junctions, connecting roads and the destination 
+ICE CREAM Parlour) where it tries to find the possible ways to get the route from sevaral 
+junctions to the destination based on the intermediate rewards. A reward of -1 means there
+is no way further, -0.5 is a penalty due to the signal in the route which can cause delay. 
+A reward of 100 is given when the agent reaches the ICE CREAM parlour. We will talk about
+various algorithm and differences between them. This is closed or fixed environment, this
+is where Q - Learning helps the agent to learn and decide the path during training. 
+In case of open or dynamic environment the Q - Learning will not work, so we will a
+pply Q - Learning with Artificial neural networks to predict the outcome and learn 
+the path. This is called as Deep Q - Learning.
 ```
 
 Let us consider an example for easy understanding:
